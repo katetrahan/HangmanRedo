@@ -16,9 +16,10 @@ public class Game {
         selectedWord = wordList.get(0);
         splitUpWord = selectedWord.split("");
         letter = letterGuess;
-        for (int i = 0; i < 3; i++) {
-            matchList.add(0);
-        }
+        matchList = new ArrayList<>();
+        matchList.add("-");
+        matchList.add("-");
+        matchList.add("-");
     }
 
     public int makeWords() {
