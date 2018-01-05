@@ -1,3 +1,4 @@
+import models.Game;
 import org.junit.*;
 import static org.junit.Assert.*;
 
@@ -28,7 +29,7 @@ public class GameTest {
 
     @Test
     public void newGame_compareLetters_true() {
-        Game testGame = new Game("a");
+        Game testGame = new Game("c");
         assertEquals(true, testGame.compareLetters());
     }
 }
